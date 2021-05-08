@@ -9,28 +9,8 @@ body{
     max-width: 900px;
 
 }
-nav{
-    display: inline-flex;
-}
-
-ul{
-    list-style: none;
-    margin: 0;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-nav a:-webkit-any-link{
-    text-decoration: none;
-    font-size: 2rem;
-}
-li{
+a{
     color: rgb(72, 71, 71);
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
 }
 
 .intro{
@@ -44,7 +24,7 @@ li{
 }
 .intro h1{
     color: rgb(211, 211, 211);
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 2rem;
     background-color: rgb(183,65,14);
     text-align: center;
@@ -87,7 +67,9 @@ li{
     color: rgb(72, 71, 71);
     font-weight: bold;
 }
-
+.blog{
+    text-align: center;
+}
 
 .photos img{
     width: 30%;
@@ -119,5 +101,8 @@ li{
     border: 1px solid rgb(183,65,14);
     height: 5rem;
     width: 15rem;
+    text-align: center;
+}
+.projects{
     text-align: center;
 }
