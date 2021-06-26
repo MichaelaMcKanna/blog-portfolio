@@ -2,7 +2,48 @@ body{
     font-family: 'Itim';
     background-color: rgb(211, 211, 211);
     color: rgb(72, 71, 71);
+
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+    padding: 0 var(--spcing-3);
+    max-width: 900px;
 }
+
+.intro{
+    /*  height: 10rem;
+     padding-top: 1rem;
+     width: 66%;
+     background-position: center;
+     display: flex; */
+     padding: var(--spacing-3) 0;
+     display: block;
+ }
+ .intro h1{
+     color: rgb(211, 211, 211);
+     font-size: 2rem;
+     padding: 2rem;
+     background-color: rgb(183,65,14);
+     text-align: center;
+ }
+ .intro-container{
+     display: flex;
+     
+ }
+ .intro-text-container{
+     margin-right: var(--spacing-3);
+     opacity: 0.75;
+ }
+ 
+ .portrait{
+     width: 18%;
+     border-radius: 50%;
+     flex-shrink: 0;
+     position: absolute;
+     z-index: 5;
+     right: 4rem;
+     top: 2.5rem;
+ }
 
 article{
     display: grid;

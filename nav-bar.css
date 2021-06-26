@@ -11,10 +11,12 @@ ul{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    padding-top: 3.7rem;
+    
 }
 nav a:-webkit-any-link{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 li{
     color: rgb(72, 71, 71);
