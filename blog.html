@@ -27,28 +27,71 @@
                   <h1>The Holistic Dev</h1>
                   <p>This blog is dedicated to the output of my combined interests in holistic lifestyle and nutrition, portrayed through my passion for software development. It is a catelogue of my journey to peak mental and phycial wellness as I work to fill the space the universe has given me and help others do the same.</p>
                 </div> 
-                <img src="./resources/IMG_72202.JPG" alt="" class="portrait">
+                <img src="./resources/Cartoon Mick.PNG" alt="" class="portrait">
             </div>
         </section>
         
         <article id="newest-article-title">
-            <h2>Article Title</h2>
+            <h2>Coding Challenges: </h2>
             <figure><img></figure>
-            <time datetime="5-08-2021">May 8, 2021</time> 
-            <h2>This is the subtitle for the first section</h2>
+            <time datetime="6-28-2021">June 28, 2021</time> 
+            <h2>Reverse Words In A String or Array</h2>
             <p>
-                This is where the article will be displayed. There will be an intro on what will be dicussed. 
-                Then each point will be expounded upon then summarized. 
+                Today we are going to complete the solution so that it reverses all of the words within a string passed in.
+                Example:<br>
+                "I love sushi" becomes "sushi love I” <br><br>
+                
+                //first define a function that takes a string as a parameter <br><br>
+
+                function reverseWords(str){ <br>
+
+                //split the string into an array of words<br><br>
+
+                  str = str.split(' ');<br>
+
+                //define a variable to hold the reversed version of the array of words ititialized to a single space<br><br>
+
+                  let reverse = '';<br>
+
+                // iterate over the array of words backward<br><br>
+
+                for (let word = str.length -1; word >= 0; word--){<br>
+
+                // if the word at the current index isn’t a space then add it to ‘reverse’<br><br>
+                // if there is a space then add the space to ‘reverse’<br><br>
+                 
+                if (str[word] !== ' '){<br>
+                    if(reverse){<br>
+                      reverse += ' '<br>
+                    }<br>
+                  }<br>
+
+                //add the word at the iterated index of str to reverse<br><br>
+
+                    reverse += str[word] <br>
+                }<br>
+                  return reverse<br>
+                }<br>
+
+                The more concise version of this method which uses a helper function would be as follows<br>
+
+                Function reverseWords(str){<br>
+
+                //split turns the str into an array of words, reverse reverses the order of the array and join rejoins the reversed array <br><br>
+
+                return str.split(‘ ’).reverse().join(‘ ’);<br>
+                } <br>
+                  
             </p>
-            <h3>Here is another subsection</h3>
+            <!-- <h3>Here is another subsection</h3>
             <figure><img></figure>
             <p>Here is more info on whatever topic is being discussed</p>
             <h3>A final summary section</h3>
             <figure><img></figure>
             <p>This is where I wrap up the article and ask for comments and subscriptions</p>
-        </article>
+        </article> -->
 
-        <article id="new-article-title">
+        <!-- <article id="new-article-title">
             <h1>Article Title</h1>
             <figure><img></figure>
             <time datetime="5-08-2021">May 8, 2021</time> 
@@ -80,6 +123,6 @@
             <h2>A final summary section</h2>
             <figure><img></figure>
             <p>This is where I wrap up the article and ask for comments and subscriptions</p>
-        </article>
+        </article> -->
     </body>
 </html>
